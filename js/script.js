@@ -26,7 +26,7 @@ for (let i = 0; i < boxes.length; i++) {
 
             // computa jogada
             if (player1 == player2) {
-                
+
                 player1++;
 
                 if (secondPlayer == 'ai-player') {
@@ -83,6 +83,8 @@ function checkWinCondition() {
     let b8 = document.getElementById('block-8');
     let b9 = document.getElementById('block-9');
 
+
+
     // console.log(b1.childNodes.length);
 
     // horizontal (1ª linha)
@@ -92,19 +94,23 @@ function checkWinCondition() {
         let b3Child = b3.childNodes[0].className;
 
         if (b1Child == 'x' && b2Child == 'x' && b3Child == 'x') {
+            pinta(b1, b2, b3);
             // x  
             // console.log('x venceu');
             setTimeout(function () {
                 // x.classList.add('blink_text');
-                declareWinner('x');   
+                declareWinner('x');
+                normal(b1, b2, b3);
             }, 500);
-            
+
 
         } else if (b1Child == 'o' && b2Child == 'o' && b3Child == 'o') {
+            pinta(b1, b2, b3);
             // o
             // console.log('o venceu');
             setTimeout(function () {
-                declareWinner('o');   
+                declareWinner('o');
+                normal(b1, b2, b3);
             }, 500);
         }
     }
@@ -115,16 +121,20 @@ function checkWinCondition() {
         let b6Child = b6.childNodes[0].className;
 
         if (b4Child == 'x' && b5Child == 'x' && b6Child == 'x') {
+            pinta(b4, b5, b6);
             // x  
             // console.log('x venceu');
             setTimeout(function () {
-                declareWinner('x');   
+                declareWinner('x');
+                normal(b4, b5, b6);
             }, 500);
         } else if (b4Child == 'o' && b5Child == 'o' && b6Child == 'o') {
+            pinta(b4, b5, b6);
             // o
             // console.log('o venceu');
             setTimeout(function () {
-                declareWinner('o');   
+                declareWinner('o');
+                normal(b4, b5, b6);
             }, 500);
         }
     }
@@ -135,16 +145,20 @@ function checkWinCondition() {
         let b9Child = b9.childNodes[0].className;
 
         if (b7Child == 'x' && b8Child == 'x' && b9Child == 'x') {
+            pinta(b7, b8, b9);
             // x  
             // console.log('x venceu');
             setTimeout(function () {
-                declareWinner('x');   
+                declareWinner('x');
+                normal(b7, b8, b9);
             }, 500);
         } else if (b7Child == 'o' && b8Child == 'o' && b9Child == 'o') {
+            pinta(b7, b8, b9);
             // o
             // console.log('o venceu');
             setTimeout(function () {
-                declareWinner('o');   
+                declareWinner('o');
+                normal(b7, b8, b9);
             }, 500);
         }
     }
@@ -155,16 +169,20 @@ function checkWinCondition() {
         let b7Child = b7.childNodes[0].className;
 
         if (b1Child == 'x' && b4Child == 'x' && b7Child == 'x') {
+            pinta(b1, b4, b7);
             // x  
             // console.log('x venceu');
             setTimeout(function () {
-                declareWinner('x');   
+                declareWinner('x');
+                normal(b1, b4, b7);
             }, 500);
         } else if (b1Child == 'o' && b4Child == 'o' && b7Child == 'o') {
+            pinta(b1, b4, b7);
             // o
             // console.log('o venceu');
             setTimeout(function () {
-                declareWinner('o');   
+                declareWinner('o');
+                normal(b1, b4, b7);
             }, 500);
         }
     }
@@ -175,16 +193,20 @@ function checkWinCondition() {
         let b8Child = b8.childNodes[0].className;
 
         if (b2Child == 'x' && b5Child == 'x' && b8Child == 'x') {
+            pinta(b2, b5, b8);
             // x  
             // console.log('x venceu');
             setTimeout(function () {
-                declareWinner('x');   
+                declareWinner('x');
+                normal(b2, b5, b8);
             }, 500);
         } else if (b2Child == 'o' && b5Child == 'o' && b8Child == 'o') {
+            pinta(b2, b5, b8);
             // o
             // console.log('o venceu');
             setTimeout(function () {
-                declareWinner('o');   
+                declareWinner('o');
+                normal(b2, b5, b8);
             }, 500);
         }
     }
@@ -195,16 +217,20 @@ function checkWinCondition() {
         let b9Child = b9.childNodes[0].className;
 
         if (b3Child == 'x' && b6Child == 'x' && b9Child == 'x') {
+            pinta(b3, b6, b9);
             // x  
             // console.log('x venceu');
             setTimeout(function () {
-                declareWinner('x');   
+                declareWinner('x');
+                normal(b3, b6, b9);
             }, 500);
         } else if (b3Child == 'o' && b6Child == 'o' && b9Child == 'o') {
+            pinta(b3, b6, b9);
             // o
             // console.log('o venceu');
             setTimeout(function () {
-                declareWinner('o');   
+                declareWinner('o');
+                normal(b3, b6, b9);
             }, 500);
         }
     }
@@ -215,16 +241,20 @@ function checkWinCondition() {
         let b9Child = b9.childNodes[0].className;
 
         if (b1Child == 'x' && b5Child == 'x' && b9Child == 'x') {
+            pinta(b1, b5, b9);
             // x  
             // console.log('x venceu');
             setTimeout(function () {
-                declareWinner('x');   
+                declareWinner('x');
+                normal(b1, b5, b9);
             }, 500);
         } else if (b1Child == 'o' && b5Child == 'o' && b9Child == 'o') {
+            pinta(b1, b5, b9);
             // o
             // console.log('o venceu');
             setTimeout(function () {
-                declareWinner('o');   
+                declareWinner('o');
+                normal(b1, b5, b9);
             }, 500);
         }
     }
@@ -235,16 +265,20 @@ function checkWinCondition() {
         let b7Child = b7.childNodes[0].className;
 
         if (b3Child == 'x' && b5Child == 'x' && b7Child == 'x') {
+            pinta(b3, b5, b7);
             // x  
             // console.log('x venceu');
             setTimeout(function () {
-                declareWinner('x');   
+                declareWinner('x');
+                normal(b3, b5, b7);
             }, 500);
         } else if (b3Child == 'o' && b5Child == 'o' && b7Child == 'o') {
+            pinta(b3, b5, b7);
             // o
             // console.log('o venceu');
             setTimeout(function () {
-                declareWinner('o');   
+                declareWinner('o');
+                normal(b3, b5, b7);
             }, 500);
         }
 
@@ -299,8 +333,8 @@ function declareWinner(winner) {
 
 function computerPlay() {
     let cloneO = o.cloneNode(true);
-     counter = 0;
-     filled = 0;
+    counter = 0;
+    filled = 0;
 
     for (let i = 0; i < boxes.length; i++) {
         let randomNumber = Math.floor(Math.random() * 5); //de 0 a 5
@@ -310,7 +344,7 @@ function computerPlay() {
                 counter++;
                 break;
             }
-        } else{
+        } else {
             filled++;
         }
     }
@@ -319,7 +353,21 @@ function computerPlay() {
     }
 }
 
-botao.addEventListener('click', () =>{
+function pinta(a, b, c) {
+    a.style.backgroundColor = 'yellow';
+    b.style.backgroundColor = 'yellow';
+    c.style.backgroundColor = 'yellow';
+}
+
+function normal(a, b, c) {
+    a.style.backgroundColor = 'white';
+    b.style.backgroundColor = 'white';
+    c.style.backgroundColor = 'white';
+}
+
+
+
+botao.addEventListener('click', () => {
     location.reload();
 });
 
