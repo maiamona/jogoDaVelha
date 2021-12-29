@@ -312,7 +312,7 @@ function declareWinner(winner) {
         scoreBoardO.textContent = parseInt(scoreBoardO.textContent) + 1;
         msg = 'O jogador 2 venceu';
     } else {
-        msg = 'EMPATE !';
+        msg = 'GRELHA CHEIA !';
     }
     messageText.innerHTML = msg;
     messageContainer.classList.remove('hide');
